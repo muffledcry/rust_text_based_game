@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 uuid = "0.8.2"
+ticktime = "0.0.1"

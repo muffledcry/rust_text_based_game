@@ -4,8 +4,15 @@
 name = "text_game"
 version = "0.1.0"
 dependencies = [
+ "ticktime",
  "uuid",
 ]
+
+[[package]]
+name = "ticktime"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7e1ee492a6bdb71080cc50a9119f9f9badbbfc9c4d63a2898873d1905ebdb07e"
 
 [[package]]
 name = "uuid"
