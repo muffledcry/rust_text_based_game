@@ -10,4 +10,8 @@ impl World {
             locations: Vec::new(),
         }
     }
+
+    fn update(&mut self, location: Location) -> () {
+        ()
+    }
 }

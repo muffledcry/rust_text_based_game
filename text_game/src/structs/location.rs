@@ -1,8 +1,10 @@
 use super::npc::NPC;
+use super::player::Player;
 
 pub struct Location {
     name: String,
     npcs: Vec<NPC>,
+    player: Option<Player>
 }
 
 impl Location {
@@ -10,6 +12,7 @@ impl Location {
         Location {
             name: String::new(),
             npcs: Vec::new(),
+            player: None,
         }
     }
 }
