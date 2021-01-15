@@ -1,6 +1,7 @@
 use super::npc::AorD;
 use super::item::Item;
 
+use serde::{Serialize, Deserialize};
 use std::io;
 
 pub struct Player {

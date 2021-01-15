@@ -1,26 +1,24 @@
 use super::location::Location;
+use serde::{Serialize, Deserialize};
+use chrono::{DateTime, NaiveDateTime, Utc};
 
-use ticktime::{EarthLikeMonthType, TickTime, TickTimeType};
 
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct World {
     locations: Vec<Location>,
-    time: TickTime,
+    time: chrono::DateTime<chrono::Utc>,
 }
 
 impl World {
     fn new(self) -> Self {
-        let mut ticktime = TickTime::init(
-        0,TickTimeType::EarthLike 
-        { seconds_per_tick: 3600, month_type: EarthLikeMonthType::Lunar }).unwrap();}}
+        // let dt = DateTime::<Utc>::from_utc(NaiveDateTime::from_timestamp(61, 0), Utc);
         World {
             locations: Vec::new(),
-            time: ticktime,
+            time: date,
         }
     }
 
     fn update(&mut self, location: Location) -> () {
-        // Calling tick to simulate 1 day
-        for _ in 0..(24) {
-            self.time.tick();
+        
     }
 }

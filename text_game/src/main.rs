@@ -1,4 +1,5 @@
 mod structs;
+use serde::{Serialize, Deserialize};
 
 
 fn main() {

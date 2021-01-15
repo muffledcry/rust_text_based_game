@@ -1,6 +1,9 @@
 use super::npc::NPC;
 use super::player::Player;
 
+use serde::{Serialize, Deserialize};
+
+
 pub struct Location {
     name: String,
     npcs: Vec<NPC>,

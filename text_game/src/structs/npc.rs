@@ -1,22 +1,24 @@
-use uuid::Uuid;
+// use uuid::Uuid;
+use serde::{Serialize, Deserialize};
+
 use super::item::Item;
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
 pub enum AorD {
     Alive,
     _Dead,
 }
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
 pub enum Social {
     Aggressive,
     Passive,
     Friendly,
 }
 
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct NPC {
-    id: Uuid,
+    id: String,
     name: String,
     aord: AorD,
     social: Social,
