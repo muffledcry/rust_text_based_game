@@ -4,6 +4,7 @@ use super::item::Item;
 use serde::{Serialize, Deserialize};
 use std::io;
 
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Player {
     name: String,
     aord: AorD,

@@ -3,7 +3,7 @@ use super::player::Player;
 
 use serde::{Serialize, Deserialize};
 
-
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Location {
     name: String,
     npcs: Vec<NPC>,
