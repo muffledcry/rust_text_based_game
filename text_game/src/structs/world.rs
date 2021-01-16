@@ -12,7 +12,7 @@ pub struct World {
 }
 
 impl World {
-    fn new(self) -> Self {
+    pub fn new() -> Self {
         World {
             locations: Vec::new(),
             days: 0,
@@ -21,7 +21,9 @@ impl World {
         }
     }
 
-    fn update(&mut self) -> () {
-        
+    pub fn update(&mut self) -> () {
+        println!("Hello from our World!");
+        self.hours = self.hours +1;
+        println!("The hour in our world is now: {}", self.hours);
     }
 }
