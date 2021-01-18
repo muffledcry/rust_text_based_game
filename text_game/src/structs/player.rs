@@ -18,7 +18,9 @@ pub struct Player {
 }
 
 impl Player {
-    fn new(self) -> Self {
+    pub fn new() -> Self {
+        println!("Welcome to our weird ass game.");
+        println!("Please enter your character's name.");
         let mut name = String::new();
         std::io::stdin().read_line(&mut name).expect("Failed to get player name.");
         let name = name.trim();

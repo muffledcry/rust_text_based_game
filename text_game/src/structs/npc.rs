@@ -31,3 +31,9 @@ pub struct NPC {
     shield: Item,
   
 }
+
+impl NPC {
+    pub fn new() {
+        
+    }
+}

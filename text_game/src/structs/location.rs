@@ -5,17 +5,19 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Location {
-    name: String,
-    npcs: Vec<NPC>,
-    player: Option<Player>
+    pub name: String,
+    pub npcs: Vec<NPC>,
+    pub player: Option<Player>,
+    pub descriptions: Vec<String>,
 }
 
 impl Location {
-    fn new(self) -> Location {
+    pub fn new() -> Location {
         Location {
             name: String::new(),
             npcs: Vec::new(),
             player: None,
+            descriptions: Vec::new(),
         }
     }
 }

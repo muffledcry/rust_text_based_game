@@ -5,7 +5,7 @@ use ticktime;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct World {
-    locations: Vec<Location>,
+    pub locations: Vec<Location>,
     days: u32,
     hours: u32,
     minutes: u32,
@@ -22,8 +22,15 @@ impl World {
     }
 
     pub fn update(&mut self) -> () {
-        println!("Hello from our World!");
-        self.hours = self.hours +1;
-        println!("The hour in our world is now: {}", self.hours);
+        self.minutes = self.minutes +1;
+        if self.minutes == 60 {
+            self.hours += 1;
+            self.minutes = 0;
+        }
+
+        if self.hours == 24 {
+            self.days += 1;
+            self.hours = 0;
+        }     
     }
 }
