@@ -1,0 +1,6 @@
+(
+    name: "The Village",
+    npcs: [],
+    player: None,
+    descriptions: ["The sun shines on the quaint village", "It is pouring rain on the village"],
+)
