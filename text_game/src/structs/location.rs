@@ -8,6 +8,28 @@ use std::io::prelude::*;
 use serde::{Serialize, Deserialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum SchoolLocType {
+    Classroom,
+    Hallway,
+    Office,
+    Cafeteria,
+    Auditorium,
+    Outside,
+    Bathroom,
+    Lockerroom,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum HomeLocType {
+    Kitchen,
+    Dining,
+    Bedroom,
+    Bathroom,
+    Outside,
+    Family,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Location {
     pub name: String,
     pub npcs: Vec<NPC>,
@@ -26,15 +48,3 @@ impl Location {
     }
 }
 
-
-
-
-
-// pub fn new() -> Location {
-//         Location {
-//             name: String::new(),
-//             npcs: Vec::new(),
-//             player: None,
-//             descriptions: Vec::new(),
-//         }
-//     }
