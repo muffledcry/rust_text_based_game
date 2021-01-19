@@ -16,12 +16,12 @@ pub struct Location {
 }
 
 impl Location {
-    pub fn new()-> Location {
+    pub fn new()-> Vec<Location> {
         let path = Path::new("./src/g_data/locations.ron");
         let mut file = File::open(path).unwrap();
         let mut contents = String::new();
         file.read_to_string(&mut contents).unwrap();
-        let data: Location = ron::de::from_str(&contents).unwrap();
+        let data: Vec<Location> = ron::de::from_str(&contents).unwrap();
         data
     }
 }
