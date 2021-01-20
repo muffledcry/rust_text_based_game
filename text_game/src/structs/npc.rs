@@ -59,7 +59,9 @@ pub struct NPC {
     aord: AorD,
     npc_role: NpcRole,
     turned_state: TurnedState,
-    disposition: Disposition,
+    prim_dispos: Disposition,
+    sec_dispos: Disposition,
+    resistance: f32,
     percent_turned: f32,
     inventory: Vec<Item>,
 }

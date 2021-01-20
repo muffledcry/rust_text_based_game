@@ -1,7 +1,7 @@
 use super::npc::NPC;
 use super::player::Player;
 
-use ron::de::from_str;
+use ron;
 use std::path::Path;
 use std::fs::{File};
 use std::io::prelude::*;
@@ -35,6 +35,7 @@ pub struct Location {
     pub npcs: Vec<NPC>,
     pub player: Option<Player>,
     pub descriptions: Vec<String>,
+    power: f32,
 }
 
 impl Location {
