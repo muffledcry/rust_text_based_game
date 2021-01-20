@@ -34,6 +34,8 @@ pub struct Location {
     pub name: String,
     pub npcs: Vec<NPC>,
     pub player: Option<Player>,
+    home_loc_type: Option<HomeLocType>,
+    school_loc_type: Option<SchoolLocType>,
     pub descriptions: Vec<String>,
     power: f32,
 }
@@ -48,4 +50,3 @@ impl Location {
         data
     }
 }
-

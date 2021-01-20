@@ -1,12 +1,18 @@
 [(
-    name: "The Village",
+    name: "Hallway",
     npcs: [],
     player: None,
+    home_loc_type: None,
+    school_loc_type: Some(Hallway),
     descriptions: ["The sun shines on the quaint village", "It is pouring rain on the village"],
+    power: 0.1,
 ),
 (
-    name: "The Swamps",
+    name: "Your Bedroom",
     npcs: [],
     player: None,
+    home_loc_type: Some(Bedroom),
+    school_loc_type: None,
     descriptions: ["A damp, dank swamp.", "It is raining in the swamp."],
+    power: 0.0,
 ),]
