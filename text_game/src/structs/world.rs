@@ -1,6 +1,5 @@
 use super::location::Location;
 use serde::{Serialize, Deserialize};
-use ticktime;
 
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

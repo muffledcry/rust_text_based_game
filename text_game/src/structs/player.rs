@@ -1,8 +1,7 @@
-use super::npc::AorD;
+use crate::enums::npc_enums::AorD;
 use super::item::Item;
 
 use serde::{Serialize, Deserialize};
-use std::io;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Player {

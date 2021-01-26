@@ -1,8 +1,8 @@
 mod structs;
 mod initialize;
+mod enums;
 
 use std::{time, thread};
-use structs::world::World;
 
 
 fn main() {

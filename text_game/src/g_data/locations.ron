@@ -4,7 +4,7 @@
     player: None,
     home_loc_type: None,
     school_loc_type: Some(Hallway),
-    descriptions: ["The sun shines on the quaint village", "It is pouring rain on the village"],
+    descriptions: ["The hallways is quiet between classes.", "Students mill through the hallway on their way to class."],
     power: 0.1,
 ),
 (
@@ -13,6 +13,6 @@
     player: None,
     home_loc_type: Some(Bedroom),
     school_loc_type: None,
-    descriptions: ["A damp, dank swamp.", "It is raining in the swamp."],
+    descriptions: ["The morning light shines through your window, illuminating your bedroom.", "With no light on, your room is covered in shadow."],
     power: 0.0,
 ),]

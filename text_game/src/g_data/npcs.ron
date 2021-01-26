@@ -1,0 +1,28 @@
+[
+    (
+    id: None,
+    name: "Scissor",
+    aord: Alive,
+    npc_role: Security,
+    turned_state: Pure,
+    prim_dispos: Jock,
+    sec_dispos: Partygoer,
+    resistance: 50.0,
+    percent_turned: 0.0,
+    inventory: [],
+    location: "Hallway",
+    ),
+    (
+    id: None,
+    name: "Jenna Ma",
+    aord: Alive,
+    npc_role: Student,
+    turned_state: Pure,
+    prim_dispos: Horny,
+    sec_dispos: Paranoid,
+    resistance: 20.0,
+    percent_turned: 0.0,
+    inventory: [],
+    location: "Your Bedroom",
+    ),
+]
